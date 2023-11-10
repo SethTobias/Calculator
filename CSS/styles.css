@@ -21,3 +21,66 @@
   --white: #f6f5f5ff;
   /* -----------------------------------------Colours----------------------------------------- */
 }
+
+#simple {
+  background-color: var(--blue);
+  border: #010400 5px solid;
+  border-radius: 10px;
+  margin: auto;
+  height: 550px;
+  width: 400px;
+}
+
+.screen {
+  background-color: var(--white);
+  border: var(--pink) 5px solid;
+  border-radius: 10px;
+  margin: 20px auto;
+  height: 60px;
+  width: 350px;
+}
+
+.screen:hover {
+  background-color: var(--pink);
+  border-color: var(--white);
+}
+
+.keys {
+  margin: auto;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.key {
+  background-color: var(--purple);
+  margin: auto;
+  height: 60px;
+  width: 60px;
+  border: var(--black) 3px solid;
+}
+
+.row1,
+.row2,
+.row3,
+.row4 {
+  display: flex;
+  padding: 25px;
+}
+
+.key.value:hover {
+  background-color: var(--black);
+  color: var(--white);
+  border-color: var(--purple);
+  font-weight: bolder;
+  font-size: 30px;
+  box-shadow: var(--white) 10px 10px 10px;
+}
+
+.key.operation:hover {
+  background-color: var(--blue);
+  color: var(--black);
+  border-color: var(--pink);
+  font-weight: bolder;
+  font-size: 30px;
+  box-shadow: var(--black) 10px 10px 10px;
+}
