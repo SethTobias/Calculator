@@ -57,6 +57,8 @@
   height: 60px;
   width: 60px;
   border: var(--black) 3px solid;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .row1,
@@ -64,7 +66,7 @@
 .row3,
 .row4 {
   display: flex;
-  padding: 25px;
+  padding: 20px;
 }
 
 .key.value:hover {
@@ -73,7 +75,7 @@
   border-color: var(--purple);
   font-weight: bolder;
   font-size: 30px;
-  box-shadow: var(--white) 10px 10px 10px;
+  transform: translate(-5px, -3px);
 }
 
 .key.operation:hover {
@@ -82,5 +84,5 @@
   border-color: var(--pink);
   font-weight: bolder;
   font-size: 30px;
-  box-shadow: var(--black) 10px 10px 10px;
+  transform: translate(-5px, -3px);
 }
