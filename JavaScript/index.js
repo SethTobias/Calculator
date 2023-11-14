@@ -39,8 +39,15 @@ function addValue(value) {
 }
 
 let equal = document.querySelector("[data-equal]");
-equal.addEventListener("click", () => output(screen));
+equal.addEventListener("click", () => output(display.value));
 
 function output(value) {
-  display.value = eval(value);
+  console.log("Value to be evaluated:", value);
+
+  try {
+    display.value = eval(value);
+  } catch (error) {
+    console.error("Error during evaluation:", error);
+    display.value = "Error";
+  }
 }
